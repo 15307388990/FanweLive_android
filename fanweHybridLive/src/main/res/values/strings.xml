@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="loading">加载中</string>
+    <string name="live_msg_title">直播消息：</string>
+    <string name="live_msg_auction_title">竞拍消息：</string>
+    <string name="live_msg_shopping_title">购物消息：</string>
+    <string name="live_creater_leave">主播离开一下，精彩不中断，不要走开哦</string>
+    <string name="live_creater_come_back">主播回来啦，视频即将恢复</string>
+    <string name="live_light">我点亮了</string>
+    <string name="live_send_msg_hint_normal">和大家说点什么</string>
+    <string name="live_ticket">钱票</string>
+    <string name="live_account">帐号</string>
+    <string name="live_account_authentication"></string>
+    <!-- 首页关注标签文字-->
+    <string name="live_tab_follow_text">关注</string>
+    <string name="live_tab_hot_text">热门</string>
+    <string name="live_tab_new_text">附近</string>
+
+    <!-- 邀请奖励 -->
+    <string name="invite_rewards">邀请奖励</string>
+    <string name="account_balance1">账户余额：</string>
+    <string name="drill">钻</string>
+    <string name="diamond">元</string>
+    <string name="transfer_to_my_account">转入我的帐户</string>
+    <string name="alipay_withdrawal">支付宝提现</string>
+    <string name="my_invite">我邀请的人</string>
+    <string name="copy_invitation_link">复制邀请链接</string>
+    <string name="successfully_invited">您已成功邀请0位好友</string>
+    <string name="copy_success">复制成功</string>
+    <!--排行榜-->
+    <string name="live_ranking_tab_merits_text">收入榜</string>
+    <string name="live_ranking_tab_contribution_text">消费榜</string>
+    <!--充值页面-->
+    <string name="live_recharge_exchange">充值</string>
+    <!-- 编辑页面-情感状态字段-->
+    <string-array name="affective_state">
+        <item>保密</item>
+        <item>单身</item>
+        <item>恋爱中</item>
+        <item>已婚</item>
+        <item>同性</item>
+    </string-array>
+
+    <string name="game_currency">游戏币</string>
+    <string name="exchange_game_currency">兑换游戏币</string>
+    <string name="daily_tasks">每日任务</string>
+
+    <!-- 指定全局HeaderView类的全名 -->
+    <string name="lib_ptr_header_class">com.fanwe.live.view.pulltorefresh.AppPullToRefreshLoadingView</string>
+    <!-- 指定全局FooterView类的全名 -->
+    <string name="lib_ptr_footer_class">com.fanwe.live.view.pulltorefresh.AppPullToRefreshLoadingView</string>
+    <!-- 支付宝提现奖励 -->
+    <string name="available_diamond">可兑换钻石：</string>
+    <string name="amount_available">可用金额：</string>
+    <string name="withdrawal_amount">提现金额：</string>
+    <string name="alipay_account">支付宝帐号：</string>
+    <string name="payee_name">收款人姓名：</string>
+    <string name="input_available_diamond">最大提现金额为%1$s</string>
+    <string name="input_amount_available">请输入可用金额</string>
+    <string name="input_withdrawal_amount">请输入提现金额</string>
+    <string name="input_alipay_account">请输入支付宝帐号</string>
+    <string name="input_payee_name">请输入收款人姓名</string>
+    <string name="withdrawal">提现</string>
+    <string name="withdrawal_success">提现成功</string>
+    <string name="transfer_to_success">转入成功</string>
+
+</resources>

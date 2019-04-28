@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/amount_available"
+            android:textColor="@color/res_text_gray_l"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/tv_amount_available"
+            style="@style/res.Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:background="@color/transparent"
+            android:textSize="13sp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/withdrawal_amount"
+            android:textColor="@color/res_text_gray_l"
+            android:textSize="13sp"/>
+
+        <com.fanwe.library.customview.ClearEditText
+            android:id="@+id/cet_withdrawal_amount"
+            style="@style/res.Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:background="@color/transparent"
+            android:textSize="13sp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alipay_account"
+            android:textColor="@color/res_text_gray_l"
+            android:textSize="13sp"/>
+
+        <com.fanwe.library.customview.ClearEditText
+            android:id="@+id/et_amount_of_alipay"
+            style="@style/res.Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:background="@color/transparent"
+            android:textSize="13sp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payee_name"
+
+            android:textColor="@color/res_text_gray_l"
+            android:textSize="13sp"/>
+
+        <com.fanwe.library.customview.ClearEditText
+            android:id="@+id/et_payee_name"
+            style="@style/res.Edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:background="@color/transparent"
+            android:textSize="13sp"
+            />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/res_height_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/selector_main_color_to_main_color_press_50dp_corner"
+        android:text="@string/withdrawal"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

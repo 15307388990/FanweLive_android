@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/view_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <com.fanwe.live.appview.LiveLinkMicGroupView
+        android:id="@+id/view_link_mic_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/rl_root_layout"
+        layout="@layout/include_live_layout_creater_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 关闭按钮 -->
+    <com.fanwe.live.appview.room.RoomCloseView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/layer_blur_corner20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="6dp"
+        android:paddingTop="2dp"
+        android:paddingRight="6dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

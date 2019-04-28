@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAccountBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="帐户余额：0钻"
+                android:textColor="#808080"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center|bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDiamond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:text="0"
+                    android:textColor="#333333"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|bottom"
+                    android:text="元"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSuccessfullyInvited"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="@string/successfully_invited"
+                android:textColor="#808080"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_into_account"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/selector_red_color_to_red_color_press_50dp_corner"
+            android:text="@string/transfer_to_my_account"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_alipay_withdrawal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/selector_red_color_to_red_color_press_50dp_corner"
+            android:text="@string/alipay_withdrawal"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/tvInviteUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:ellipsize="start"
+            android:maxEms="12"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_invite_url"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/selector_red_color_to_red_color_press_50dp_corner"
+            android:text="@string/copy_invitation_link"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_my_invite"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/selector_red_color_to_red_color_press_50dp_corner"
+            android:text="@string/my_invite"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="40dp"
+            android:lineSpacingMultiplier="1.4"
+            android:text="邀请说明:\n1、好友通过您的专属链接进行注册VIP观看，您就可以获得相应的奖历\n2、成功邀请一位好友开通VIP可得50%现金可兑换为相应钻石,用户充值永久返利50%\n3、现金可以提现(满30元即可提现)也可以以钻石形式转入到自己的帐户中\n4、邀请数据每天1:00进行汇总\n5、恶意注册,会被取消相应的奖历,后台进行人工审核"
+            android:textColor="#808080"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

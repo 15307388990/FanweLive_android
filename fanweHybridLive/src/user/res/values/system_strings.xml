@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">小仙女</string>
+    <integer name="is_viewer_show_plug">1</integer>
+    <string name="umeng_appkey">5a4055898f4a9d5a29000011</string>
+    <string name="umeng_message_secret_push">0d253497b5774ffa5ea0432557a15691</string>
+    <string name="tencent_map_key">36HBZ-Z5XK4-CCMUE-DWKUY-DCJSJ-JIF7M</string>
+    <string name="wx_app_id">wxc4eaad6c0bd9ff7b</string>
+    <string name="wx_app_secret">003bce5b806f0ff402e6bfb4d3892fb2</string>
+    <string name="qq_auth_scheme">tencent1106192640</string>
+    <string name="qq_app_id">1106192640</string>
+    <string name="qq_app_key">NGgZpjGFrpHOtxYg</string>
+    <string name="sina_app_key">3310867184</string>
+    <string name="sina_app_secret">94ccd4786bdaf1967fb2f4d9b2531ae8</string>
+    <string name="app_id_tencent_live">1400176823</string>
+</resources>
+

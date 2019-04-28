@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_live_main_bottom_bar"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <com.fanwe.live.view.LiveTabMainMenuView
+            android:id="@+id/view_tab_live"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stateListAnimator="@drawable/bm_selector_press_scale_out"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <com.fanwe.live.view.LiveTabMainMenuView
+            android:id="@+id/view_tab_ranking"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stateListAnimator="@drawable/bm_selector_press_scale_out"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_tab_create_live"
+        android:layout_width="@dimen/height_live_main_bottom_bar"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="3dp"
+        android:src="@drawable/ic_create_live"
+        android:stateListAnimator="@drawable/bm_selector_press_scale_out"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <com.fanwe.live.view.LiveTabMainMenuView
+            android:id="@+id/view_tab_small_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stateListAnimator="@drawable/bm_selector_press_scale_out"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <com.fanwe.live.view.LiveTabMainMenuView
+            android:id="@+id/view_tab_me"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stateListAnimator="@drawable/bm_selector_press_scale_out"/>
+    </LinearLayout>
+
+
+</LinearLayout>
