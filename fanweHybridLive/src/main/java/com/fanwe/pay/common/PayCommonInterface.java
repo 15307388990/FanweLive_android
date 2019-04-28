@@ -72,7 +72,7 @@ public class PayCommonInterface
         AppRequestParams params = new AppRequestParams();
         params.putCtl("invite");
         params.putAct("diamondToUser");
-        params.put("money",money);
+        params.put("diamonds",money);
         params.setNeedShowActInfo(false);
         AppHttpUtil.getInstance().post(params, listener);
     }

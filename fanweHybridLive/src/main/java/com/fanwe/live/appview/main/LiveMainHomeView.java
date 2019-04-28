@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.fanwe.hybrid.activity.AppWebViewActivity;
 import com.fanwe.hybrid.dao.InitActModelDao;
 import com.fanwe.hybrid.event.ERetryInitSuccess;
 import com.fanwe.hybrid.model.InitActModel;
@@ -90,7 +91,7 @@ public class LiveMainHomeView extends BaseAppView {
             public void onClick(View v) {
 //                Intent intent = new Intent(getActivity(), AppWebViewActivity.class);
 //                intent.putExtra(AppWebViewActivity.EXTRA_URL, model.getInvite_url());
-//               getActivity().startActivity(intent);
+//                getActivity().startActivity(intent);
                 getActivity().startActivity(new Intent(getContext(), InviteRewardsActivity.class));
             }
         });

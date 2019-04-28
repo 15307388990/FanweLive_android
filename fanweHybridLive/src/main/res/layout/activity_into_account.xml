@@ -51,15 +51,15 @@
             android:textColor="@color/res_text_gray_l"
             android:textSize="13sp" />
 
-        <EditText
+        <com.fanwe.library.customview.ClearEditText
             android:id="@+id/et_available_diamond"
             style="@style/res.Edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/transparent"
+            android:inputType="numberDecimal"
             android:paddingRight="10dp"
             android:singleLine="true"
-            android:text="0"
             android:textSize="13sp" />
     </LinearLayout>
 

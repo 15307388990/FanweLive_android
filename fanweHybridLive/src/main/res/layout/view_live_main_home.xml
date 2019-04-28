@@ -43,9 +43,9 @@
     </LinearLayout>
     <ImageView
         android:id="@+id/image_invite"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="32dp"
-        android:layout_marginLeft="16dp" />
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="13dp" />
 </RelativeLayout>

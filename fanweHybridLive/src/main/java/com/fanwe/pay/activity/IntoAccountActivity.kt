@@ -71,12 +71,13 @@ class IntoAccountActivity : BaseTitleActivity() {
      * 事件监听
      */
     private fun initListener() {
-        var etdiamonds = et_available_diamond.text.toString();
+
         //转入帐户
         btn_sure.setOnClickListener {
-            if (!TextUtils.isEmpty(etdiamonds) && diamonds.toDouble() > etdiamonds.toDouble()) {
+            var etDiamonds = et_available_diamond.text.toString();
+            if (!TextUtils.isEmpty(etDiamonds) && diamonds.toDouble() > etDiamonds.toDouble()) {
                 showProgressDialog("加载中...")
-                PayCommonInterface.requestIntoAccount(etdiamonds, object : AppRequestCallback<IntoAccountModel>() {
+                PayCommonInterface.requestIntoAccount(etDiamonds, object : AppRequestCallback<IntoAccountModel>() {
                     override fun onSuccess(p0: SDResponse?) {
                         dismissProgressDialog()
                         if (actModel.isOk) {
