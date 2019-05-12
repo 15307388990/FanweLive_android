@@ -68,7 +68,6 @@ public class LiveTabHotView extends LiveTabBaseView {
         addHeaderView();
         mAdapter = new LiveTabHotAdapter(mListModel, getActivity());
         lv_content.setAdapter(mAdapter);
-        requestData();
         updateParams();
         initPullToRefresh();
 
