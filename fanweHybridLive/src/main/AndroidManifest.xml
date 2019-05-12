@@ -54,6 +54,9 @@
         android:label="@string/app_name"
         android:theme="@style/AppThemeAnimation"
         tools:replace="android:icon, android:theme">
+        <meta-data
+            android:name="com.openinstall.APP_KEY"
+            android:value="omynrd"/>
         <activity
             android:name="com.fanwe.hybrid.activity.InitActivity"
             android:label="@string/app_name"
@@ -62,6 +65,13 @@
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="omynrd" />
             </intent-filter>
         </activity>
         <!-- H5页面Start==================================== -->
@@ -86,6 +96,7 @@
                     android:host="ilvb.fanwe.net"
                     android:pathPrefix="/main"
                     android:scheme="fanwe"/>
+
             </intent-filter>
         </activity>
 

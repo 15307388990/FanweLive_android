@@ -42,6 +42,7 @@ import com.fanwe.live.event.EUserLogout;
 import com.fanwe.live.model.App_userinfoActModel;
 import com.fanwe.live.utils.StorageFileUtils;
 import com.fanwei.jubaosdk.shell.FWPay;
+import com.fm.openinstall.OpenInstall;
 import com.squareup.leakcanary.LeakCanary;
 import com.sunday.eventbus.SDEventManager;
 import com.tencent.rtmp.ITXLiveBaseListener;
@@ -77,7 +78,7 @@ public class App extends Application implements ITXLiveBaseListener {
             SDDisk.init(this);
             SDDisk.setGlobalObjectConverter(new JsonObjectConverter());
             SDDisk.setDebug(ApkConstant.DEBUG);
-
+            OpenInstall.init(this);
             LeakCanary.install(this);
             MobclickAgent.setCatchUncaughtExceptions(false);
             UMShareAPI.get(this);

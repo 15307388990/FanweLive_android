@@ -102,8 +102,8 @@ public class LiveTabHotAdapter extends SDViewHolderAdapter<LiveRoomModel>
 
             if (model.getCate_id() > 0)
             {
-                SDViewBinder.setTextView(tv_topic, model.getTitle());
-                SDViewUtil.setVisible(tv_topic);
+               // SDViewBinder.setTextView(tv_topic, model.getTitle());
+                //SDViewUtil.setVisible(tv_topic);
             } else
             {
                 SDViewUtil.setGone(tv_topic);

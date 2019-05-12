@@ -30,6 +30,7 @@ import com.fanwe.live.event.EUpLoadImageComplete;
 import com.fanwe.live.model.App_do_updateActModel;
 import com.fanwe.live.model.UserModel;
 import com.fanwe.live.utils.GlideUtil;
+import com.fm.openinstall.OpenInstall;
 
 import org.xutils.view.annotation.ViewInject;
 
@@ -340,6 +341,8 @@ public class LiveDoUpdateActivity extends BaseTitleActivity
                             InitBusiness.finishLoginActivity();
                             InitBusiness.finishMobileRegisterActivity();
                             InitBusiness.startMainActivity(LiveDoUpdateActivity.this);
+                            //用户注册成功后调用
+                            OpenInstall.reportRegister();
                         } else
                         {
                             SDToast.showToast("保存用户信息失败");

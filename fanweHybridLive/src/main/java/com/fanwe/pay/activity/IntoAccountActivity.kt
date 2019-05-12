@@ -58,10 +58,10 @@ class IntoAccountActivity : BaseTitleActivity() {
         val bundle = intent.extras
         if (bundle != null) {
             if (!TextUtils.isEmpty(diamonds)) {
-                val dimoand = (diamonds.toDouble() * 8).toInt()
-                if (dimoand >= 1) {
-                    tv_available_diamond.text = dimoand.toString()
-                }
+               // val dimoand = (diamonds.toDouble() * 8).toInt()
+               // if (dimoand >= 1) {
+                    tv_available_diamond.text =diamonds;
+                //}
             }
 
         }

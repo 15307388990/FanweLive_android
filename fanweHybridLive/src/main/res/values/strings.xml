@@ -26,7 +26,7 @@
     <string name="alipay_withdrawal">支付宝提现</string>
     <string name="my_invite">我邀请的人</string>
     <string name="copy_invitation_link">复制邀请链接</string>
-    <string name="successfully_invited">您已成功邀请0位好友</string>
+    <string name="successfully_invited">您已成功邀请%1$s位好友</string>
     <string name="copy_success">复制成功</string>
     <!--排行榜-->
     <string name="live_ranking_tab_merits_text">收入榜</string>

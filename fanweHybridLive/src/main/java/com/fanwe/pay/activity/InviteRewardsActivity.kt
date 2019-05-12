@@ -86,7 +86,7 @@ class InviteRewardsActivity : BaseTitleActivity() {
             //钻石
             tvDiamond.text=it.money
             //邀请人数
-            val  str=String.format(getString(R.string.successfully_invited),it.inviteNumber,it.inviteMoney)
+            val  str=String.format(getString(R.string.successfully_invited),it.inviteNumber)
             tvSuccessfullyInvited.text=str
         }
     }

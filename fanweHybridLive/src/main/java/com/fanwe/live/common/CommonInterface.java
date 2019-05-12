@@ -27,6 +27,7 @@ import com.fanwe.library.utils.MD5Util;
 import com.fanwe.library.utils.SDJsonUtil;
 import com.fanwe.live.BuildConfig;
 import com.fanwe.live.IMHelper;
+import com.fanwe.live.activity.LiveLoginActivity;
 import com.fanwe.live.business.LiveCreaterBusiness;
 import com.fanwe.live.dao.UserModelDao;
 import com.fanwe.live.event.ERequestFollowSuccess;
@@ -1311,6 +1312,7 @@ public class CommonInterface
         params.put("mobile", mobile);
         params.put("verify_coder", verify_coder);
         params.put("agency_id", BuildConfig.agency_id);//代理商id fix by xiaolin
+        params.put(LiveLoginActivity.INVITATION_PARM,LiveLoginActivity.invitationCode==null?"":LiveLoginActivity.invitationCode);
         AppHttpUtil.getInstance().post(params, listener);
     }
 

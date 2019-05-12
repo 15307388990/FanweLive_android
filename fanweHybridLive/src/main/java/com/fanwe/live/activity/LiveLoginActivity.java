@@ -28,9 +28,15 @@ import com.fanwe.live.common.CommonInterface;
 import com.fanwe.live.event.EFirstLoginNewLevel;
 import com.fanwe.live.model.App_do_updateActModel;
 import com.fanwe.live.model.UserModel;
+import com.fm.openinstall.OpenInstall;
+import com.fm.openinstall.listener.AppInstallAdapter;
+import com.fm.openinstall.model.AppData;
 import com.sunday.eventbus.SDEventManager;
 import com.umeng.socialize.UMAuthListener;
 import com.umeng.socialize.bean.SHARE_MEDIA;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.Map;
 
@@ -62,6 +68,8 @@ public class LiveLoginActivity extends BaseActivity
 
     private SDDurationBlocker blocker = new SDDurationBlocker(2000);
 
+    public static String invitationCode;
+    public static final String INVITATION_PARM = "p_user";
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -83,6 +91,26 @@ public class LiveLoginActivity extends BaseActivity
         register();
         bindDefaultData();
         initLoginIcon();
+        getInvitationCode();
+    }
+    public void getInvitationCode() {
+        OpenInstall.getInstall(new AppInstallAdapter() {
+            @Override
+            public void onInstall(AppData appData) {
+                try {
+//                    //获取渠道数据
+//                    String channelCode = appData.getChannel();
+//                    //获取自定义数据
+//                    String bindData = appData.getData();
+//                    Log.d("OpenInstall", "getInstall : installData = " + appData.toString());
+//                    SDToast.showToast(appData.toString());
+                    JSONObject jsonObject = new JSONObject(appData.getData() );
+                    invitationCode = jsonObject.getString(INVITATION_PARM);
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     private void register()
